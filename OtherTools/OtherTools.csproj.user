@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>publish\|ftp://zeusinterface.bplaced.net/www/ZeusEntertainment/Published/OtherTools/</PublishUrlHistory>
+    <InstallUrlHistory>http://zeusinterface.bplaced.net/ZeusEntertainment/Published/OtherTools/|http://zeusinterface.bplaced.net/ZeusEntertainment/Published/OtherTools/publish.html/|http://zeusinterface.bplaced.net/ZeusEntertainment/Published/Othertools/publish.html/</InstallUrlHistory>
+    <SupportUrlHistory>http://zeusinterface.bplaced.net/ZeusEntertainment/Published/html/support.html</SupportUrlHistory>
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory>http://zeusinterface.bplaced.net/ZeusEntertainment/Published/html/error.html</ErrorReportUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>

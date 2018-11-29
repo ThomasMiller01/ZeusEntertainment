@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cmd version="1.0" root="main">
+  <item>
+    <id>0</id>
+    <name>Possible Commands</name>
+    <command>welche befehle</command>
+    <action>possibleCommands</action>
+    <usesCore>true</usesCore>
+    <definition>This command prints all possible commands into the console</definition>
+    <answers>
+      <answer>To see all possible commands, open the console;</answer>
+      <answer>All possible commands were printed into the console;</answer>
+      <answer>open the console to see all possible commands</answer>
+    </answers>
+    <needsParameter>false</needsParameter>
+  </item>
+  <item>
+    <id>1</id>
+    <name>Get Time</name>
+    <command>wie viel uhr</command>
+    <action>getCurrentTime</action>
+    <usesCore>true</usesCore>
+    <definition>This command return the current time</definition>
+    <answers>
+      <answer>Now it is;</answer>
+      <answer>It is</answer>
+    </answers>    
+    <needsParameter>false</needsParameter>
+  </item>
+  <item>
+    <id>2</id>
+    <name>Get Day</name>
+    <command>welcher tag</command>
+    <action>getCurrentDay</action>
+    <usesCore>true</usesCore>
+    <definition>This command return the current day</definition>
+    <answers>
+      <answer>Today is;</answer>
+      <answer>Today we have the</answer>
+    </answers>
+    <needsParameter>false</needsParameter>
+  </item>
+  <item>
+    <id>3</id>
+    <name>Math calculation</name>
+    <command>was ist</command>
+    <action>mathCalculation</action>
+    <usesCore>true</usesCore>
+    <definition>This command does math calculations</definition>
+    <answers>
+      <answer>Math;</answer>
+      <answer>Math</answer>
+    </answers>
+    <needsParameter>true</needsParameter>
+  </item>
+  <item>
+    <id>4</id>
+    <name>Calls protocol</name>
+    <command>führe protokoll aus</command>
+    <action>callProtocol</action>
+    <usesCore>true</usesCore>
+    <definition>This command calls a protocoll</definition>
+    <answers>
+      <answer>Protocol called;</answer>
+      <answer>Called protocol</answer>
+    </answers>
+    <needsParameter>true</needsParameter>
+  </item>
+  <item>
+    <id>5</id>
+    <name>Start Program</name>
+    <command>starte</command>
+    <action>startProgram</action>
+    <usesCore>true</usesCore>
+    <definition>This command starts a program</definition>
+    <answers>
+      <answer>Started;</answer>
+      <answer>Started</answer>
+    </answers>
+    <needsParameter>true</needsParameter>
+  </item>  
+  <item>
+    <id>6</id>
+    <name>Close Program</name>
+    <command>schließe</command>
+    <action>closeProgram</action>
+    <usesCore>true</usesCore>
+    <definition>This command closes a program</definition>
+    <answers>
+      <answer>Closed;</answer>
+      <answer>Closed</answer>
+    </answers>
+    <needsParameter>true</needsParameter>
+  </item>
+  <item>
+    <id>7</id>
+    <name>Wikipedia-Search</name>
+    <command>wiki</command>
+    <action>wiki</action>
+    <usesCore>true</usesCore>
+    <definition>This command uses the wikipedia-api</definition>
+    <answers>
+      <answer>Wiki searched;</answer>
+      <answer>Searched wiki</answer>
+    </answers>
+    <needsParameter>true</needsParameter>
+  </item>
+  <item>
+    <id>8</id>
+    <name>Google-Search</name>
+    <command>google</command>
+    <action>google</action>
+    <usesCore>true</usesCore>
+    <definition>This command uses the google-search-engine</definition>
+    <answers>
+      <answer>Google opened;</answer>
+      <answer>Opened google</answer>
+    </answers>
+    <needsParameter>true</needsParameter>
+  </item>
+  <item>
+    <id>9</id>
+    <name>Weather</name>
+    <command>wetter</command>
+    <action>weather</action>
+    <usesCore>true</usesCore>
+    <definition>This command gets the local weather</definition>
+    <answers>
+      <answer>Weather</answer>
+    </answers>
+    <needsParameter>false</needsParameter>
+  </item>
+  <item>
+    <id>10</id>
+    <name>News-Feed</name>
+    <command>nachrichten</command>
+    <action>RSSNewsFeed</action>
+    <usesCore>true</usesCore>
+    <definition>This command gets the news from Google-News</definition>
+    <answers>
+      <answer>Current news are:;</answer>
+      <answer>News:</answer>
+    </answers>
+    <needsParameter>true</needsParameter>
+  </item>
+  <item>
+    <id>11</id>
+    <name>Start Song</name>
+    <command>starte lied</command>
+    <action>SpotifyStartSong</action>
+    <usesCore>true</usesCore>
+    <definition>This command starts the song played by Spotify</definition>
+    <answers>
+      <answer>Song started;</answer>
+      <answer>Started song</answer>
+    </answers>
+    <needsParameter>false</needsParameter>
+  </item>
+  <item>
+    <id>12</id>
+    <name>Stop Song</name>
+    <command>stoppe lied</command>
+    <action>SpotifyStopSong</action>
+    <usesCore>true</usesCore>
+    <definition>This command stops the song played by Spotify</definition>
+    <answers>
+      <answer>Song stopped;</answer>
+      <answer>Stopped song</answer>
+    </answers>
+    <needsParameter>false</needsParameter>
+  </item>
+  <item>
+    <id>13</id>
+    <name>Next Song</name>
+    <command>nächste lied</command>
+    <action>SpotifyNextSong</action>
+    <usesCore>true</usesCore>
+    <definition>This command starts the next song played by Spotify</definition>
+    <answers>
+      <answer>Next song started;</answer>
+      <answer>Started next song</answer>
+    </answers>
+    <needsParameter>false</needsParameter>
+  </item>
+  <item>
+    <id>14</id>
+    <name>Previous Song</name>
+    <command>letztes lied</command>
+    <action>SpotifyPreviousSong</action>
+    <usesCore>true</usesCore>
+    <definition>This command starts the previous song played by Spotify</definition>
+    <answers>
+      <answer>Previous song started;</answer>
+      <answer>Started previous song</answer>
+    </answers>
+    <needsParameter>false</needsParameter>
+  </item>
+  <item>
+    <id>15</id>
+    <name>Clear Console</name>
+    <command>clear</command>
+    <action>clear</action>
+    <usesCore>false</usesCore>
+    <definition>This command clears the console</definition>
+    <answers>
+      <answer>Console was cleared;</answer>
+      <answer>Cleared the console</answer>
+    </answers>
+    <needsParameter>false</needsParameter>
+  </item>
+  <item>
+    <id>16</id>
+    <name>Start Console</name>
+    <command>starte konsole</command>
+    <action>startConsole</action>
+    <usesCore>false</usesCore>
+    <definition>This command started the console</definition>
+    <answers>
+      <answer>Console was opened;</answer>
+      <answer>Opened the console</answer>
+    </answers>
+    <needsParameter>false</needsParameter>
+  </item>
+  <item>
+    <id>17</id>
+    <name>Close Console</name>
+    <command>schließe konsole</command>
+    <action>closeConsole</action>
+    <usesCore>false</usesCore>
+    <definition>This command closed the console</definition>
+    <answers>
+      <answer>Console was closed;</answer>
+      <answer>Closed the console</answer>
+    </answers>
+    <needsParameter>false</needsParameter>
+  </item>
+  <item>
+    <id>18</id>
+    <name>Toggle debug</name>
+    <command>debug</command>
+    <action>toggleDebug</action>
+    <usesCore>false</usesCore>
+    <definition>This command toggles debug</definition>
+    <answers>
+      <answer>Debug was toggled;</answer>
+      <answer>Toggled debug</answer>
+    </answers>
+    <needsParameter>false</needsParameter>
+  </item>
+  <item>
+    <id>19</id>
+    <name>Start SpeechRecognition</name>
+    <command>starte spracherkennung</command>
+    <action>startZeus</action>
+    <usesCore>false</usesCore>
+    <definition>This command starts the speechRecognition of zeus</definition>
+    <answers>
+      <answer>Zeus was started;</answer>
+      <answer>Started zeus</answer>
+    </answers>
+    <needsParameter>false</needsParameter>
+  </item>
+  <item>
+    <id>20</id>
+    <name>Stop SpeechRecognition</name>
+    <command>stoppe spracherkennung</command>
+    <action>stopZeus</action>
+    <usesCore>false</usesCore>
+    <definition>This command stops the speechRecognition of zeus</definition>
+    <answers>
+      <answer>Zeus was stopped;</answer>
+      <answer>Stopped zeus</answer>
+    </answers>
+    <needsParameter>false</needsParameter>
+  </item>
+  <item>
+    <id>21</id>
+    <name>Close Zeus</name>
+    <command>Systemclose</command>
+    <action>closeZeus</action>
+    <usesCore>false</usesCore>
+    <definition>This command closes zeus</definition>
+    <answers>
+      <answer>Zeus was closed;</answer>
+      <answer>Closed Zeus</answer>
+    </answers>
+    <needsParameter>false</needsParameter>
+  </item>
+</cmd>
