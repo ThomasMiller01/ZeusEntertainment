@@ -1,0 +1,952 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="de-de" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0" root="main">
+
+  <rule id="main" scope="public">
+    <item>
+      <one-of>
+        <item>
+          <ruleref uri="#SystemStart" />
+        </item>
+        <item>
+          <ruleref uri="#SystemStop" />
+        </item>
+        <item>
+          <ruleref uri="#VoiceStop" />
+        </item>
+        <item>
+          <ruleref uri="#CommandList" />
+        </item>
+        <item>
+          <ruleref uri="#Hallo" />
+        </item>
+        <item>
+          <ruleref uri="#WasBistDu" />
+        </item>
+        <item>
+          <ruleref uri="#SagHallo" />
+        </item>
+        <item>
+          <ruleref uri="#VorinstallierteStimmenAnzeigen" />
+        </item>
+        <item>
+          <ruleref uri="#Ausgewähltestimme" />
+        </item>
+        <item>
+          <ruleref uri="#geradeGesagt" />
+        </item>
+        <item>
+          <ruleref uri="#TestStarten" />
+        </item>
+        <item>
+          <ruleref uri="#Uhrzeit" />
+        </item>
+        <item>
+          <ruleref uri="#mathe" />
+        </item>
+        <item>
+          <ruleref uri="#Name" />
+        </item>
+        <item>
+          <ruleref uri="#WieGehtesDir" />
+        </item>
+        <item>
+          <ruleref uri="#todolisteread" />
+        </item>
+        <item>
+          <ruleref uri="#todolistewrite" />
+        </item>
+        <item>
+          <ruleref uri="#date" />
+        </item>
+        <item>
+          <ruleref uri="#timersetzen" />
+        </item>
+        <item>
+          <ruleref uri="#stoppetimer" />
+        </item>
+        <item>
+          <ruleref uri="#timershow" />
+        </item>
+        <item>
+          <ruleref uri="#todolistedelete" />
+        </item>
+        <item>
+          <ruleref uri="#fehler" />
+        </item>
+        <item>
+          <ruleref uri="#definiere" />
+        </item>
+        <item>
+          <ruleref uri="#Protokollausführen" />
+        </item>
+        <item>
+          <ruleref uri="#minimieren" />
+        </item>
+        <item>
+          <ruleref uri="#maximieren" />
+        </item>
+        <item>
+          <ruleref uri="#wobistduzeus" />
+        </item>
+        <item>
+          <ruleref uri="#öffne" />
+        </item>
+        <item>
+          <ruleref uri="#schließen" />
+        </item>
+        <item>
+          <ruleref uri="#öffneConsole" />
+        </item>
+        <item>
+          <ruleref uri="#schließeConsole" />
+        </item>
+      </one-of>
+    </item>
+  </rule>
+  
+  <!-- Befehle -->
+
+  <rule id="öffneConsole" scope="public">
+    <item> starte </item>
+    <item> die </item>
+    <item> Konsole </item>
+  </rule>
+
+  <rule id="schließeConsole" scope="public">
+    <item> schließe </item>
+    <item> die </item>
+    <item> Konsole </item>
+  </rule>
+  
+  <rule id="schließen" scope="public">
+    <item>
+      <ruleref uri="#stoppen" />
+    </item>
+    <item>
+      <ruleref uri="#programme" />
+    </item>
+  </rule>
+
+  <rule id="öffne" scope="public">
+    <item>
+      <ruleref uri="#starten" />
+    </item>
+    <item>
+      <ruleref uri="#programme" />
+    </item>
+  </rule>
+  
+  <rule id="wobistduzeus" scope="public">
+    <item>
+      <ruleref uri="#GrundFrage" />
+    </item>
+    <item>
+      <ruleref uri="#sein" />
+    </item>
+    <item>
+      <ruleref uri="#article" />
+    </item>
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+  </rule>
+
+  <rule id="maximieren" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#aktivieren" />
+    </item>
+    <item>
+      <ruleref uri="#article" />
+    </item>
+  </rule>
+
+  <rule id="minimieren" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#verstecken" />
+    </item>
+    <item>
+      <ruleref uri="#article" />
+    </item>
+  </rule>
+  
+  <rule id="Protokollausführen" scope="public">
+    <item>
+      <ruleref uri="#auswählen" />
+    </item>
+    <item>
+      <ruleref uri="#Füllwörter" />
+    </item>
+    <item>
+      <ruleref uri="#Protokolle" />
+    </item>
+    <item>
+      <ruleref uri="#BefehlObject" />
+    </item>
+    <item>
+      <ruleref uri="#aktivieren" />
+    </item>
+  </rule>
+
+  <rule id="definiere" scope="public">
+    <item> definiere </item>
+  </rule>
+  
+  <rule id="fehler" scope="public">
+    <item>
+      <ruleref uri="#fehlerwort" />
+    </item>
+    <item>
+      <ruleref uri="#auswählen" />
+    </item>
+  </rule>
+  
+  <rule id="todolistedelete" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#stoppen" />
+    </item>
+    <item>
+      <ruleref uri="#TestObject" />
+    </item>
+    <item>
+      <ruleref uri="#Füllwörter" />
+    </item>
+    <item>
+      <ruleref uri="#Füllwörter" />
+    </item>
+    <item>
+      <ruleref uri="#todoliste" />
+    </item>
+  </rule>
+
+  <rule id="timershow" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#ObjectFrage" />
+    </item>
+    <item>
+      <ruleref uri="#ZeitObject" />
+    </item>
+    <item>
+      <ruleref uri="#sein" />
+    </item>
+    <item>
+      <ruleref uri="#Füllwörter" />
+    </item>
+  </rule>
+  
+  <rule id="stoppetimer" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#stoppen" />
+    </item>
+    <item>
+      <ruleref uri="#ZeitObject" />
+    </item>
+  </rule>
+  
+  <rule id="timersetzen" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#setzen" />
+    </item>
+    <item>
+      <ruleref uri="#ZeitObject" />
+    </item>
+    <item>
+      <ruleref uri="#Füllwörter" />
+    </item>
+    <item>
+      <ruleref uri="#zahlen" />
+    </item>
+    <item>
+      <ruleref uri="#zeit" />
+    </item>
+  </rule>
+
+  <rule id="date" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#ObjectFrage" />
+    </item>
+    <item>
+      <ruleref uri="#tag" />
+    </item>
+    <item>
+      <ruleref uri="#sein" />
+    </item>
+    <item>
+      <ruleref uri="#ZeitObject" />
+    </item>
+  </rule>
+  
+  <rule id="todolistewrite" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#hinzufügen" />
+    </item>
+    <item>
+      <ruleref uri="#TestObject" />
+    </item>
+    <item>
+      <ruleref uri="#Füllwörter" />
+    </item>
+    <item>
+      <ruleref uri="#todoliste" />
+    </item>
+    <item>
+      <ruleref uri="#hinzufügen" />
+    </item>
+  </rule>
+
+  <rule id="todolisteread" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#GrundFrage" />
+    </item>
+    <item>
+      <ruleref uri="#stehen" />
+    </item>
+    <item>
+      <ruleref uri="#Füllwörter" />
+    </item>
+    <item>
+      <ruleref uri="#Füllwörter" />
+    </item>
+    <item>
+      <ruleref uri="#todoliste" />
+    </item>
+  </rule>
+  
+  <rule id="WieGehtesDir" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#GrundFrage" />
+    </item>
+    <item>
+      <ruleref uri="#gehen" />
+    </item>
+    <item>
+      <ruleref uri="#Füllwörter" />
+    </item>
+    <item>
+      <ruleref uri="#article" />
+    </item>
+  </rule>
+  
+  <rule id="Name" scope="public">
+    <item>
+      <ruleref uri="#GrundFrage" />
+    </item>
+    <item>
+      <ruleref uri="#heißen" />
+    </item>
+    <item>
+      <ruleref uri="#article" />
+    </item>
+  </rule>
+  
+  <rule id="mathe" scope ="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#GrundFrage" />
+    </item>
+    <item>
+      <ruleref uri="#sein" />
+    </item>
+    <item>
+      <ruleref uri="#zahlen" /> <!-- Zahl1 -->
+    </item>
+    <item>
+      <ruleref uri="#operatoren" /> <!-- Operator -->
+    </item>
+    <item>
+      <ruleref uri="#zahlen" /> <!-- Zahl2 -->
+    </item>
+  </rule>
+  
+  <rule id="Uhrzeit" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#GrundFrage" />
+    </item>
+    <item>
+      <ruleref uri="#Füllwörter" />
+    </item>
+    <item>
+      <ruleref uri="#ZeitObject" />
+    </item>
+    <item>
+      <ruleref uri="#sein" />
+    </item>
+    <item>
+      <ruleref uri="#Füllwörter" />
+    </item>
+    <item>
+      <ruleref uri="#ZeitObject" />
+    </item>
+  </rule>
+  
+  <rule id="TestStarten" scope="public">
+    <item>
+      <ruleref uri="#starten" />
+    </item>
+    <item>
+      <ruleref uri="#Füllwörter" />
+    </item>
+    <item>
+      <ruleref uri="#TestObject" />
+    </item>
+  </rule>
+  
+  <rule id="VorinstallierteStimmenAnzeigen" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#ObjectFrage" />
+    </item>
+    <item>
+      <ruleref uri="#StimmenObject" />
+    </item>
+    <item>
+      <ruleref uri="#sein" />
+    </item>
+    <item>
+      <ruleref uri="#programmiert" />
+    </item>
+  </rule>
+
+  <rule id="geradeGesagt" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#GrundFrage" />
+    </item>
+    <item>
+      <ruleref uri="#haben" />
+    </item>
+    <item>
+      <ruleref uri="#article" />
+    </item>
+    <item>
+      <ruleref uri="#Füllwörter" />
+    </item>
+    <item>
+      <ruleref uri="#sagen" />
+    </item>
+  </rule>
+
+  <rule id="Ausgewähltestimme" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#ObjectFrage" />
+    </item>
+    <item>
+      <ruleref uri="#StimmenObject" />
+    </item>
+    <item>
+      <ruleref uri="#sein" />
+    </item>
+    <item>
+      <ruleref uri="#Füllwörter" />
+    </item>
+    <item>
+      <ruleref uri="#auswählen" />
+    </item>
+  </rule>
+  
+  <rule id="SagHallo" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#sagen" />
+    </item>
+    <item>
+      <ruleref uri="#Begrüßung" />
+    </item>
+  </rule>
+  
+  <rule id="WasBistDu" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#GrundFrage" />
+    </item>
+    <item>
+      <ruleref uri="#sein" />
+    </item>
+    <item>
+      <ruleref uri="#Füllwörter" />
+    </item>
+  </rule>
+  
+  <rule id="SystemStart" scope="public">
+    <item>
+      <ruleref uri="#starten" />
+    </item>
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+  </rule>
+
+  <rule id="SystemStop" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item> close </item>
+  </rule>
+
+  <rule id="VoiceStop" scope="public">
+    <item> close </item>
+  </rule>
+
+  <rule id="CommandList" scope="public">
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+    <item>
+      <ruleref uri="#ObjectFrage" />
+    </item>
+    <item>
+      <ruleref uri="#BefehlObject" />
+    </item>
+    <item>
+      <ruleref uri="#sein" />
+    </item>
+    <item>
+      <ruleref uri="#Füllwörter" />
+    </item>
+  </rule>
+
+  <rule id="Hallo" scope="public">
+    <item>
+      <ruleref uri="#Begrüßung" />
+    </item>
+    <item>
+      <ruleref uri="#SprachSystemObject" />
+    </item>
+  </rule>
+
+  <!-- Fragen -->
+
+  <rule id="programme" scope="public">
+    <one-of>
+      <item> Overwatch </item>
+      <item> Discord </item>
+      <item> Steam </item>
+      <item> Notepad </item>
+      <item> Firefox </item>
+      <item> Visual Studio </item>
+      <item> Task Manager </item>
+      <item> den Vertretungsplan </item>
+      <item> Youtube </item>
+    </one-of>
+  </rule>
+  
+  <rule id="fehlerwort" scope="public">
+    <one-of>
+      <item> fehler </item>
+    </one-of>
+  </rule>
+
+  <rule id="Protokolle" scope="public">
+    <one-of>
+      <item> Fehleranalyze </item>
+      <item> Größen </item>
+    </one-of>
+  </rule>
+  
+  <rule id="ZeitFrage" scope="public">
+    <one-of>
+      <item> wann </item>
+    </one-of>
+  </rule>
+
+  <rule id="GrundFrage" scope="public">
+    <one-of>
+      <item> wieso </item>
+      <item> warum </item>
+      <item> weshalb </item>
+      <item> wie </item>
+      <item> was </item>
+      <item> wo </item>
+    </one-of>
+  </rule>
+
+  <rule id="PersonenFrage" scope="public">
+    <one-of>
+      <item> wer </item>
+    </one-of>
+  </rule>
+
+  <rule id="ObjectFrage" scope="public">
+    <one-of>
+      <item> welche </item>
+      <item> welcher </item>
+    </one-of>
+  </rule>
+
+  <!-- Objekte -->
+
+  <rule id="ZeitObject" scope="public">
+    <one-of>
+      <item> Uhr </item>
+      <item> Uhrzeit </item>
+      <item> heute </item>
+      <item> jetzt </item>
+      <item> timer </item>
+      <item> timer 1 </item>
+      <item> timer 2 </item>
+      <item> timer 3 </item>
+      <item> timer 4 </item>
+      <item> timer 5 </item>
+    </one-of>
+  </rule>
+
+  <rule id="TestObject" scope="public">
+    <one-of>
+      <item> Test </item>
+      <item> Testmodus </item>
+    </one-of>
+  </rule>
+
+  <rule id="StimmenObject" scope="public">
+    <one-of>
+      <item> Stimme </item>
+      <item> Stimmen</item>
+    </one-of>
+  </rule>
+
+  <rule id="BefehlObject" scope="public">
+    <one-of>
+      <item> Befehl </item>
+      <item> Befehle </item>
+      <item> Protokoll</item>
+    </one-of>
+  </rule>
+
+
+  <rule id="SprachSystemObject" scope="public">
+    <one-of>
+      <item> Zeus </item>
+      <item> WirelessConsole </item>
+      <item> Sprachassistent</item>
+      <item> System </item>
+    </one-of>
+  </rule>
+
+  <rule id="Begrüßung" scope="public">
+    <one-of>
+      <item> Hallo </item>
+      <item> Sei gegrüßt </item>
+    </one-of>
+  </rule>
+
+  <rule id="todoliste" scope="public">
+    <one-of>
+      <item> todoliste </item>
+    </one-of>
+  </rule>
+
+  <rule id="tag" scope="public">
+    <one-of>
+      <item> tag </item>
+    </one-of>
+  </rule>
+
+  <rule id="zeit" scope="public">
+    <one-of>
+      <item> sekunden </item>
+      <item> minuten </item>
+      <item> stunden </item>
+    </one-of>
+  </rule>
+
+  <!-- Verben -->
+  
+  <rule id="programmiert" scope="public">
+    <one-of>
+      <item> programmiert </item>
+      <item> programmieren </item>
+      <item> installieren </item>
+      <item> vorinstallieren </item>
+      <item> installiert </item>
+      <item> vorinstalliert </item>
+      <item> erschaffen </item>
+    </one-of>
+  </rule>
+
+  <rule id="haben" scope="public">
+    <one-of>
+      <item> haben </item>
+      <item> hat </item>
+      <item> hast </item>
+      <item> hatte </item>
+      <item> hattest</item>
+    </one-of>
+  </rule>
+
+  <rule id="werden" scope="public">
+    <one-of>
+      <item> werden </item>
+      <item> wirst </item>
+      <item> wurdest </item>
+      <item> wurde </item>
+      <item> war </item>
+      <item> warst </item>
+    </one-of>
+  </rule>
+
+  <rule id="sein" scope="public">
+    <one-of>
+      <item> ist </item>
+      <item> sind </item>
+      <item> seid </item>
+      <item> bin </item>
+      <item> bist </item>
+      <item> gibt </item>
+    </one-of>
+  </rule>
+
+  <rule id="gehen" scope="public">
+    <one-of>
+      <item> gehen </item>
+      <item> geht </item>
+      <item> gehst </item>
+      <item> ging </item>
+    </one-of>
+  </rule>
+
+  <rule id="stehen" scope="public">
+    <one-of>
+      <item> stehen </item>
+      <item> steht </item>
+      <item> stehst</item>
+    </one-of>
+  </rule>
+
+  <rule id="setzen" scope="public">
+    <one-of>
+      <item> setzen </item>
+      <item> setze </item>
+    </one-of>
+  </rule>
+
+  <rule id="stoppen" scope="public">
+    <one-of>
+      <item> stoppe </item>
+      <item> lösche </item>
+      <item> löschen </item>
+      <item> schließe </item>
+    </one-of>
+  </rule>
+
+  <rule id="sagen" scope="public">
+    <one-of>
+      <item> sagen </item>
+      <item> sag </item>
+      <item> sagtest </item>
+      <item> gesagt </item>
+    </one-of>
+  </rule>
+
+  <rule id="starten" scope="public">
+    <one-of>
+      <item> starten </item>
+      <item> starte </item>
+      <item> startest </item>
+    </one-of>
+  </rule>
+
+  <rule id="hinzufügen" scope="public">
+    <one-of>
+      <item> hinzufügen </item>
+      <item> füge </item>
+      <item> hinzu </item>
+    </one-of>
+  </rule>
+
+  <rule id="können" scope="public">
+    <one-of>
+      <item> können </item>
+      <item> kannst </item>
+      <item> kann </item>
+      <item> könntest </item>
+    </one-of>
+  </rule>
+
+  <rule id="heißen" scope="public">
+    <one-of>
+      <item> heißen </item>
+      <item> heißt </item>
+    </one-of>
+  </rule>
+
+  <rule id="auswählen" scope="public">
+    <one-of>
+      <item> auswählen </item>
+      <item> ausgewählt</item>
+      <item> anzeigen </item>
+      <item> führe </item>
+    </one-of>
+  </rule>
+
+  <rule id="verstecken" scope="public">
+    <one-of>
+      <item> verstecke </item>
+      <item> minimiere </item>
+    </one-of>
+  </rule>
+
+  <rule id="kennenlernen" scope="public">
+    <item> kennenlernen </item>
+    <item> kennenzulernen </item>
+  </rule>
+
+  <rule id="aktivieren" scope="public">
+    <one-of>
+      <item> aktivieren </item>
+      <item> aktiviert </item>
+      <item> aus </item>
+      <item> zeige </item>
+    </one-of>
+  </rule>
+
+  <!-- Füllwörter -->
+  
+  <rule id="Füllwörter" scope="public">
+    <one-of>
+      <item> es </item>
+      <item> zurzeit </item>
+      <item> gerade </item>
+      <item> den </item>
+      <item> viel </item>
+      <item> auf </item>
+      <item> meiner </item>
+      <item> zur </item>
+      <item> von </item>
+      <item> der </item>
+      <item> das </item>
+    </one-of>
+  </rule>
+
+  <rule id="article" scope="public">
+    <one-of>
+      <item> du </item>
+      <item> dich </item>
+      <item> dir </item>
+    </one-of>
+  </rule>
+
+  <!-- Operatoren -->
+
+  <rule id="operatoren" scope="public">
+    <one-of>
+      <item> plus </item>
+      <item> minus </item>
+      <item> mal </item>
+      <item> geteilt durch </item>
+    </one-of>
+  </rule>
+  
+  <!-- Zahlen -->
+
+  <rule id="zahlen" scope="public">
+    <one-of>
+      <item> 0 </item>
+      <item> 1 </item>
+      <item> 2 </item>
+      <item> 3 </item>
+      <item> 4 </item>
+      <item> 5 </item>
+      <item> 6 </item>
+      <item> 7 </item>
+      <item> 8 </item>
+      <item> 9 </item>
+      <item> 10 </item>
+      <item> 11 </item>
+      <item> 12 </item>
+      <item> 13 </item>
+      <item> 14 </item>
+      <item> 15 </item>
+      <item> 16 </item>
+      <item> 17 </item>
+      <item> 18 </item>
+      <item> 19 </item>
+      <item> 20 </item>
+      <item> 21 </item>
+      <item> 22 </item>
+      <item> 23 </item>
+      <item> 24 </item>
+      <item> 25 </item>
+      <item> 26 </item>
+      <item> 27 </item>
+      <item> 28 </item>
+      <item> 29 </item>
+      <item> 30 </item>
+      <item> 31 </item>
+      <item> 32 </item>
+      <item> 33 </item>
+      <item> 34 </item>
+      <item> 35 </item>
+      <item> 36 </item>
+      <item> 37 </item>
+      <item> 38 </item>
+      <item> 39 </item>
+      <item> 40 </item>
+      <item> 41 </item>
+      <item> 42 </item>
+      <item> 43 </item>
+      <item> 44 </item>
+      <item> 45 </item>
+      <item> 46 </item>
+      <item> 47 </item>
+      <item> 48 </item>
+      <item> 49 </item>
+      <item> 50 </item>
+      <item> 51 </item>
+      <item> 52 </item>
+      <item> 53 </item>
+      <item> 54 </item>
+      <item> 55 </item>
+      <item> 56 </item>
+      <item> 57 </item>
+      <item> 58 </item>
+      <item> 59 </item>
+      <item> 60 </item>
+    </one-of>
+  </rule>
+  
+</grammar>

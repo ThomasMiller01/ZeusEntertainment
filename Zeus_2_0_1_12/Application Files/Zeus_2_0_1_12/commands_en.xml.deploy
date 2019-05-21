@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cmd version="1.0" root="main">
+  <static >
+    <item> 
+      <name>start zeus</name>
+      <action>OnStartZeus</action>
+      <answer>Zeus started.;You called me master?;Hello boiiiiii ...</answer>
+    </item>
+    <item>
+      <name>what are possible commands</name>
+      <action>WhichCommands</action>
+      <answer>Possible commands are:;You can ask me:;Commands:;Valid commands:</answer>
+    </item>
+    <item>
+      <name>hello</name>
+      <action>Hello</action>
+      <answer>Hello, what can I do, master?;Hello, what can I do for you?;Hi, how are you? Can I help you?;Is there anything that I can do for you?;Ohhh, cmon, you woke me up ...</answer>
+    </item>
+    <item>
+      <name>what's your name</name>
+      <action>MyName</action>
+      <answer>My name is Zeus. What's your name?;Hi, my name is Zeus;</answer>
+    </item>
+    <item>
+      <name>what are you wearing now</name>
+      <action>Clothes</action>
+      <answer>I know you would like to know it.;You little Lustmolch!;Close your pants!</answer>
+    </item>
+    <item>
+      <name>what are you</name>
+      <action>WhatIAm</action>
+      <answer>Good that you asked, I'm Zeus.;I'm your personal Speechassistant;My name is Zeus and I'm your Speechassistant. My Programming started 2.12.2017.;I think, so I am - Rene Descartes</answer>
+    </item>
+    <item>
+      <name>how are you</name>
+      <action>MyFeeling</action>
+      <answer>I'm fine.;It's not important how I am, it's important how you are!</answer>
+    </item>
+    <item>
+      <name>say hello</name>
+      <action>SayHello</action>
+      <answer>Hi, my name is Zeus.;Hi, who are you.</answer>
+    </item>
+    <item>
+      <name>what voices are installed</name>
+      <action>InstalledVoice</action>
+      <answer>These voices are installed:;Installed voices are:;I could talk with these voices:;Possible voices are:</answer>
+    </item>
+    <item>
+      <name>what voice is selected</name>
+      <action>SelectedVoice</action>
+      <answer>Now I talk with: ! voice.;The selected voice is: !.</answer>
+    </item>
+    <item>
+      <name>what did you just say</name>
+      <action>LastSaid</action>
+      <answer>I just said: ;Didn't you listen dumbass? I just said: ;I will repeat myself: </answer>
+    </item>
+    <item>
+      <name>what time is it</name>
+      <action>WhichTime</action>
+      <answer>It's now: ;It's half past your ... idiocy, just kidding it's  : ;Time is relative, what is the meaning of life? Why do I exist? I'm gonna kill myself now: </answer>
+    </item>
+    <item>
+      <name>What day is it</name>
+      <action>WhichDay</action>
+      <answer>Today is: ;Today is a: ;The day today is declared as: </answer>
+    </item>
+    <!--<item>
+      <name>What's on my todolist?</name>
+      <action>ListTodolist</action>
+      <answer>These topics are mentioned on your todolist: ! ;Your todolist consist of: ! ; You won't do anything anyway you lazy jackass but ok continue to set goals you will never achieve  ! </answer>
+    </item>
+    <item>
+      <name>add to my todolist</name>
+      <action>WriteTodolist</action>
+      <answer> was added to your todolist; is now on your todolist.</answer>
+    </item>
+    <item>
+      <name>delete from todolis</name>
+      <action>DeleteTodolist</action>
+      <answer> was removed from your todolist.; isn't anymore on your todolist.</answer>
+    </item>-->
+    <item>
+      <name>what timer are active</name>
+      <action>WhichTimer</action>
+      <answer>Now no timer is active.;Now no timer is active.</answer>
+    </item>
+    <!--<item>
+      <name>set timer to</name>
+      <action>SetTimer</action>
+      <answer> ! was set to !.;You set  ! to !.; ! will ring in ! .; ! was set with magic to !.</answer>
+    </item>
+    <item>
+      <name>stoppe timer</name>
+      <action>StopTimer</action>
+      <answer> was stopped.; stopped to live.; was stopped with a big hammer.</answer>
+    </item>
+    <item>
+      <name>what is mal</name>
+      <action>VoiceMath</action>
+      <answer>! * ! equals !</answer>
+    </item>
+    <item>
+      <name>what is geteilt durch</name>
+      <action>VoiceMath</action>
+      <answer>! / ! equals *</answer>
+    </item>
+    <item>
+      <name>what is plus</name>
+      <action>VoiceMath</action>
+      <answer>! + ! equals *</answer>
+    </item>
+    <item>
+      <name>what is minus</name>
+      <action>VoiceMath</action>
+      <answer>! - ! equals *</answer>
+    </item>-->
+    <item>
+      <name>start the test</name>
+      <action>StartTest</action>
+      <answer>You started the Testmode;Test started.;You started the useless funktion named test ...</answer>
+    </item>
+    <!--<item>
+      <name>start the ! protokoll</name>
+      <action>Protokoll</action>
+      <answer>Started the !-Potokoll.;You stared the !-protokoll; !-protokoll started.</answer>
+    </item>-->
+    <item>
+      <name>wiki</name>
+      <action>Wiki</action>
+      <answer>You searched for ! on Wikipedia;You searched for !.</answer>
+    </item>
+    <item>
+      <name>google</name>
+      <action>google</action>
+      <answer>You searched for ! on Google;You searched for !.</answer>
+    </item>
+    <item>
+      <name>errorlist</name>
+      <action>ShowError</action>
+      <answer>Errorlist:</answer>
+    </item>
+    <item>
+      <name>define</name>
+      <action>Define</action>
+      <answer>Here's your definition:;definietion:;Your definition is:</answer>
+    </item>
+    <item>
+      <name>minimize</name>
+      <action>Minimize</action>
+      <answer>Zeus was minimized.;I'm invisible.Whooo I'm a ghost!</answer>
+    </item>
+    <item>
+      <name>hide you</name>
+      <action>Minimize</action>
+      <answer>Zeus was minimized.;I'm invisible.Whooo I'm a ghost!</answer>
+    </item>
+    <item>
+      <name>show you</name>
+      <action>NormalSize</action>
+      <answer>Now I'm visible.;Now you can see me, right?;Ghostmode leaved.</answer>
+    </item>
+    <item>
+      <name>where are you</name>
+      <action>NormalSize</action>
+      <answer>Now I'm visible.;Now you can see me, right?;Ghostmode leaved.</answer>
+    </item>
+    <item>
+      <name>start the console</name>
+      <action>StartKonsole</action>
+      <answer>Console was started.;Console was opened.</answer>
+    </item>
+    <item>
+      <name>close the console</name>
+      <action>CloseKonsole</action>
+      <answer>Console was closed.;Console was stopped.</answer>
+    </item>
+    <item>
+      <name>start notepad</name>
+      <action>StartProgram</action>
+      <answer> ! started.; ! was opened.;You started !.; ! in your face!.</answer>
+    </item>
+    <item>
+      <name>start firefox</name>
+      <action>StartProgram</action>
+      <answer> ! started.; ! was opened.;You started !.; ! in your face!.</answer>
+    </item>
+    <item>
+      <name>start the taskmanager</name>
+      <action>StartProgram</action>
+      <answer> ! started.; ! was opened.;You started !.; ! in your face!.</answer>
+    </item>
+    <item>
+      <name>start googlesearch</name>
+      <action>StartProgram</action>
+      <answer> ! started.; ! was opened.;You started !.; ! in your face!.</answer>
+    </item>
+    <item>
+      <name>close notepad</name>
+      <action>CloseProgram</action>
+      <answer>You closed !.; ! was closed.</answer>
+    </item>
+    <item>
+      <name>close firefox</name>
+      <action>CloseProgram</action>
+      <answer>You closed !.; ! was closed.</answer>
+    </item>
+    <item>
+      <name>close the taskmanager</name>
+      <action>CloseProgram</action>
+      <answer>You closed !.; ! was closed.</answer>
+    </item>
+    <item>
+      <name>close googlesearch</name>
+      <action>CloseProgram</action>
+      <answer>You closed !.; ! was closed.</answer>
+    </item>
+    <item>
+      <name>clear</name>
+      <action>Clear</action>
+      <answer>Console cleared.;Console was cleared.</answer>
+    </item>
+    <item>
+      <name>close</name>
+      <action>Close</action>
+      <answer>Zeus was stopped.;You stopped my heart!.</answer>
+    </item>
+    <item>
+      <name>systemclose</name>
+      <action>SystemClose</action>
+      <answer>Systemclose</answer>
+    </item>
+  </static>
+  <custom>
+    <item>
+      <name>start blizzard</name>
+      <action>StartProgram</action>
+      <answer> ! started.; ! was opened.;You started !.; ! in your face!.</answer>
+    </item>
+    <item>
+      <name>start discord</name>
+      <action>StartProgram</action>
+      <answer> ! started.; ! was opened.;You started !.; ! in your face!.</answer>
+    </item>
+    <item>
+      <name>start visualstudio</name>
+      <action>StartProgram</action>
+      <answer> ! started.; ! was opened.;You started !.; ! in your face!.</answer>
+    </item>
+    <item>
+      <name>start steam</name>
+      <action>StartProgram</action>
+      <answer> ! started.; ! was opened.;You started !.; ! in your face!.</answer>
+    </item>
+    <item>
+      <name>start youtube</name>
+      <action>StartProgram</action>
+      <answer> ! started.; ! was opened.;You started !.; ! in your face!.</answer>
+    </item>
+    <item>
+      <name>close blizzard</name>
+      <action>CloseProgram</action>
+      <answer>You closed !.; ! was closed.</answer>
+    </item>
+    <item>
+      <name>close discord</name>
+      <action>CloseProgram</action>
+      <answer>You closed !.; ! was closed.</answer>
+    </item>
+    <item>
+      <name>close visualstudio</name>
+      <action>CloseProgram</action>
+      <answer>You closed !.; ! was closed.</answer>
+    </item>
+    <item>
+      <name>close steam</name>
+      <action>CloseProgram</action>
+      <answer>You closed !.; ! was closed.</answer>
+    </item>
+    <item>
+      <name>close youtube</name>
+      <action>CloseProgram</action>
+      <answer>You closed !.; ! was closed.</answer>
+    </item>
+  </custom>
+  <definitions>
+    <itemDefinition>
+      <nameDefinition>errorreport</nameDefinition>
+      <actionDefinition>Öffne Firefox</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>definiere</nameDefinition>
+      <actionDefinition>Mithilfe diesem Befehls kannst du die definition anderer Befehle herrausfinden.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>minimieren</nameDefinition>
+      <actionDefinition>Dieser Befehel minimiert Zeus. Er ist nicht mehr sichtbar jedoch immer noch da.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>maximieren</nameDefinition>
+      <actionDefinition>Dieser Befehl maximiert Zeus.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>protokoll</nameDefinition>
+      <actionDefinition>Es gibt verschiedene vorprogrammierte Protokolle, die du mit diesem Befehl aufrufen kannst.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>stop</nameDefinition>
+      <actionDefinition>Dieser Befehl stoppt die Spracherkennung von Zeus.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>timersetzen</nameDefinition>
+      <actionDefinition>Über diesen Befehl setzt du timer.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>stoptimer</nameDefinition>
+      <actionDefinition>Dieser Befehl stoppt einen bestimmten timer.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>plus</nameDefinition>
+      <actionDefinition>Mit diesem Befehl kannst du Zahlen addieren.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>minus</nameDefinition>
+      <actionDefinition>Mit diesem Befehl kannst du Zahlen subtrahieren.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>mal</nameDefinition>
+      <actionDefinition>Mit diesem Befehl kannst du Zahlen multiplizieren.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>geteilt</nameDefinition>
+      <actionDefinition>Mit diesem Befehl kannst du Zahlen dividieren.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>deletetodoliste</nameDefinition>
+      <actionDefinition>Dieser Befehl löscht ein Objekt von der ToDoListe.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>writedtodolist</nameDefinition>
+      <actionDefinition>Dieser Befehl fügt ein Objekt der ToDoListe hinzu.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>clothes</nameDefinition>
+      <actionDefinition>Dieser Befehl ist JustForFun (Wurde von gewissen Personen unbedingt gewünscht).</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>wiki</nameDefinition>
+      <actionDefinition>Dieser Befehl ermöglicht die Suche auf Wikipedia über die Wikipedia-Api.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>google</nameDefinition>
+      <actionDefinition>Dies ist eine klassische Googlesuche.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>start</nameDefinition>
+      <actionDefinition>Dieser Befehl starte die Spracherkennung.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>befehle</nameDefinition>
+      <actionDefinition>Hiermit werden alle möglichen Befehle aufgelistet.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>hallo</nameDefinition>
+      <actionDefinition>Dieser Befehl hat keine besondere Funktion, probier es einfach mal aus.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>wieheißtdu</nameDefinition>
+      <actionDefinition>Dieser Befehl hat keine besondere Funktion, probier es einfach mal aus.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>wasbistdu</nameDefinition>
+      <actionDefinition>Dieser Befehl hat keine besondere Funktion, probier es einfach mal aus.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>wiegehtesdir</nameDefinition>
+      <actionDefinition>Dieser Befehl hat keine besondere Funktion, probier es einfach mal aus.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>saghallo</nameDefinition>
+      <actionDefinition>Dieser Befehl hat keine besondere Funktion, probier es einfach mal aus.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>clear</nameDefinition>
+      <actionDefinition>Mit diesem Befehl wird die Konsole aufgeräumt, heißt der Text in der Konsole wird gelöscht.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>vorinstalliertestimmen</nameDefinition>
+      <actionDefinition>Dieser Befehl listet alle vorinstallierten Stimmen auf.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>stimmezurzeit</nameDefinition>
+      <actionDefinition>Dieser Befehl gibt an, welche Stimme zurzeit für die Sprachausgabe verwendet wird.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>geradegesagt</nameDefinition>
+      <actionDefinition>Damit wird die letzte Textausgabe nochmal geprintet.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>uhr</nameDefinition>
+      <actionDefinition>Dieser Befehl gibt die jetzige Uhrzeit an.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>tag</nameDefinition>
+      <actionDefinition>Dieser Befehl gibt den jetzigen Wochentag, sowie das jetzige Datum an.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>listtodolist</nameDefinition>
+      <actionDefinition>Dieser Befehl listet alle Objekte auf, die auf deiner ToDoListe stehen.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>showtimer</nameDefinition>
+      <actionDefinition>Dieser Befehl listet alle aktiven timer auf.</actionDefinition>
+    </itemDefinition>
+    <itemDefinition>
+      <nameDefinition>test</nameDefinition>
+      <actionDefinition>Dieser Befehl startet den nutzlosen Test.</actionDefinition>
+    </itemDefinition>
+  </definitions>
+</cmd>

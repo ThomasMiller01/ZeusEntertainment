@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Zeus.exe" version="2.0.1.12" publicKeyToken="0fcfebb7bc20ead3" language="en-US" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="notify.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Zeus" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Zeus.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="Internet" Description="Default rights given to Internet applications" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="662528">
+      <assemblyIdentity name="Newtonsoft.Json" version="11.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9Yw3T/yq5ONtdA2Q+/f+cNCrtzKM2a86CntwgD6ZS6Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Zeus.exe" size="522200">
+      <assemblyIdentity name="Zeus" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>pGJcGO9vpTInzKSiSUti0UC+m90pnde9gn1ouJCQdUU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="commands_de.xml" size="18284">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MHUUN3F1R+PtQy7+WkF/2RTOyC7660XdxU4bmEBvVn8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="commands_en.xml" size="16593">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lE6DwLJmvDKJ4+FPWGyJTEnWXYIqcQCKh95Fm2IZfj8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="data.xml" size="2283">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>L13AOkAaIMsRxtDlt6PrT3Xyak5e+Wv6VgebRE7CiR8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="grammar.xml" size="20657">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RxdG3aSu7jHf+dzeJezROz4tHd9tqqVmyfy1CX428D0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="notify.ico" size="3154">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uKCGdgjUriJf/DKyGcJ9lxCUsJVXkzF4z8ZtQ7VW5iE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ToDoListe.txt" size="14">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XKsG0KeiTavD81Za4Kp35EpEJOI8pYLuEzVChT4pJuo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Zeus.exe.config" size="1627">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3uhjeqF+dBqftIVLAKVzmzsZ9oN8PpxXWeBUKP67vhc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on and is
+           is designed to work with. Uncomment the appropriate elements and Windows will 
+           automatically selected the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=THOMASLAPTOP\Thomas" issuerKeyHash="4272a82396ba883982af00cacf4f80e95f4d9fc0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>1iAyW+wGHPIebyD86VjO8kVYWnNcvBT25OcFmUzYJZI=</DigestValue></Reference></SignedInfo><SignatureValue>VRIBBGvlA8cyITVp0RIlgdfhoKGTqbUGFn94sXRK6EDafPlOE9F5AkvK7R3vuuUN/kalmncGjgaPzd2GofHn/edcXLeY+srM24ZTorFWbPIntBQFi0Bf+Z+QG1sG7hZgb6CxTp/b4dF1nukVlnOujJBBs0lFIf7Kby5n9B51/4I=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>o+p7DzRfjwd2VDii/eMjhEX3Nob7mijsV12E6cxVc1nL81qUCrvYqDmStSwdDuNa9E+meGazB7KeHWoC+KPyBbeGZnRaPiXXelrccLz7BksuQOqyrs3c2eYUZjfVtB55HJiwI7JNmZb/KYU3Pz82wfsITKrWkM/W7Sv642c7vT0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="9225d84c9905e7e4f614bc5c735a5845f2ce58e9fc206f1ef21c06ec5b3220d6" Description="" Url=""><as:assemblyIdentity name="Zeus.exe" version="2.0.1.12" publicKeyToken="0fcfebb7bc20ead3" language="en-US" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=THOMASLAPTOP\Thomas</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>wAgbVR/Q1Sy1yrkg8xyWBlGoi2HwPFGbDmTRSVttqsg=</DigestValue></Reference></SignedInfo><SignatureValue>ltLj98vOS+cPN1jaFRliO17Ljd9L7CKTGEBetOO/RNZf8yveVtopFbjmZZQFKjHWwCnivxukoceYV74TYYKjPIkDiOabcmK0S69f7lsm0ZWtsBZI43IW789Qs4f1zR0vLseBjfbccNlaaWrYMwrRD+wpCXJZhpHu20s1boifF7s=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>o+p7DzRfjwd2VDii/eMjhEX3Nob7mijsV12E6cxVc1nL81qUCrvYqDmStSwdDuNa9E+meGazB7KeHWoC+KPyBbeGZnRaPiXXelrccLz7BksuQOqyrs3c2eYUZjfVtB55HJiwI7JNmZb/KYU3Pz82wfsITKrWkM/W7Sv642c7vT0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQS8RTxDSU979MLVFPl0yAujANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYAVABIAE8ATQBBAFMATABBAFAAVABPAFAAXABUAGgAbwBtAGEAczAeFw0xODA1MjUxNDA4MTlaFw0xOTA1MjUyMDA4MTlaMDExLzAtBgNVBAMeJgBUAEgATwBNAEEAUwBMAEEAUABUAE8AUABcAFQAaABvAG0AYQBzMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCj6nsPNF+PB3ZUOKL94yOERfc2hvuaKOxXXYTpzFVzWcvzWpQKu9ioOZK1LB0O41r0T6Z4ZrMHsp4dagL4o/IFt4ZmdFo+Jdd6WtxwvPsGSy5A6rKuzdzZ5hRmN9W0HnkcmLAjsk2Zlv8phTc/PzbB+whMqtaQz9btK/rjZzu9PQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAHp2AnJOVr2EcXzyv/ALYMb2AnWS9x07QTnJOSUp4Yk69KfqB+aav3r93M7Ybv8KNQIrfoBcm1XGDiWuLQI5iWJtfnMKonA56FmZ9592LlVI6p249WveDavucw3JcpRHXxLkiX9eREcJicmB/UZyToWKXQB1B4ghf8SRG5QNrMtw</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

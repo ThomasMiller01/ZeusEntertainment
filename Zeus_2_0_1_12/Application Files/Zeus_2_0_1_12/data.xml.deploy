@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data version="1.0" root="main">
+	<update>
+		<version>2.0.1.11</version>
+    <features>2.0.1.11=new cmd:"clear" - clears the console/2.0.1.7=Fehlerliste aktualisiert und vereinheitlicht=Fehlerseite ist nun online/2.0.1.6=Wikipedialinks gefixt/2.0.1.1=Supportseite ist nun online=Neues UI Design/2.0.0.5=Wikipedia Suche: 'wiki *word*'=Google Suche: 'google *word*'/2.0.0.3=Willkürliche Auswahl verschiedener Antwortmöglichkeiten für die einzelnen Befehle=diese Anzeige neuer Funktionen</features>
+    <showed>false</showed>
+  </update>
+	<authentificate>
+		<vertretungsplan>
+			<hashed>
+				<userVt>MDzgw+cInFMiKWdVwOZ/2Q==</userVt>
+				<passVt>Au/9e933zPs=</passVt>
+			</hashed>
+		</vertretungsplan>
+	</authentificate>
+  <errorlist>
+    <url>http://zeusinterface.bplaced.net/ZeusEntertainment/Published/html/Error/index.php?error=</url>
+    <error_101>
+      <number>101</number>
+      <description>unknown command</description>
+    </error_101>
+    <error_102>
+      <number>102</number>
+      <description>unknown program</description>
+    </error_102>
+    <error_103>
+      <number>103</number>
+      <description>unknown voice</description>
+    </error_103>
+    <error_104>
+      <number>104</number>
+      <description>loading voice recognition failed</description>
+    </error_104>
+    <error_105>
+      <number>105</number>
+      <description>errorlist is empty</description>
+    </error_105>
+    <error_106>
+      <number>106</number>
+      <description>failed to open a program</description>
+    </error_106>
+    <error_107>
+      <number>107</number>
+      <description>failed to connect to the internet</description>
+    </error_107>
+    <error_108>
+      <number>108</number>
+      <description>unknown program path</description>
+    </error_108>
+    <error_109>
+      <number>109</number>
+      <description>can't close the program, wrong process name</description>
+    </error_109>
+    <error_110>
+      <number>110</number>
+      <description>voice is not installed on this computer</description>
+    </error_110>
+    <error_111>
+      <number>111</number>
+      <description>unknown last cmd, can't define that</description>
+    </error_111>
+  </errorlist>
+</data>
