@@ -1,10 +1,4 @@
 # ZeusEntertainment
 
-Projects:
-- Zeus
-  - ZeusGUI
-  - ZeusCore
-- OtherTools
-- SocketServer
-  - Client
-  - Server
+Projekt: Zeus
+Version 2.0.1.12
